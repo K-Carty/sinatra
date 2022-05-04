@@ -25,4 +25,5 @@ end
 get '/named-cat' do
   @name = params[:name]
   erb :index
+  # x÷
 end
