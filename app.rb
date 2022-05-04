@@ -17,7 +17,12 @@ get '/about-us' do
   "A page about sinatra"
 end
 
-get '/cat' do
-  @rand_name = ["Amigo", "Misty", "Almond"].sample
+get '/random-cat' do
+  @name = ["Amigo", "Misty", "Almond"].sample
+  erb :index
+end
+
+get '/named-cat' do
+  @name = params[:name]
   erb :index
 end
