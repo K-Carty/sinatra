@@ -1,17 +1,6 @@
-<h1> "My name really is <%= @name %>" </h1>
-<img src='https://i.imgur.com/jFaSxym.png' style='border:2px dashed red'>
-
-<% if !@name %>
-<form action="/named-cat" method="get">
- <%# <ul>
-  <li> %>
-    <label for="name">Name:</label>
-    <input type="text" name="name" placeholder="cool name fam">
-  <%# </li>
-  <li> %>
-  <button type="submit" value=Submit> Submit a cat name, go on, I dare you. </button>
-  <%# </li>
- </ul> %>
-</form>
-
+<% if @name %>
+<h1> My name really is <%= @name %> </h1>
 <% end %>
+<div style='border: 3px dashed red'>
+<img src='https://i.imgur.com/jFaSxym.png'>
+</div> 
